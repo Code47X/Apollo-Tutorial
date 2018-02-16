@@ -20,6 +20,8 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "@playlyfe/gql": "^2.5.0",
+    "babel-plugin-inline-import": "^2.0.6",
     "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
