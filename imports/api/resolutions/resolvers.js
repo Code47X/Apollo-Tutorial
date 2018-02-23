@@ -13,12 +13,12 @@ export default {
     },
   },
   Mutation: {
-    createResolution() {
-      console.log('got here');
-      // mongo db insert returns the id of object your inserting
-      // const resolutionId = Resolutions.insert({
-      //   name: 'Test Res',
-      // });
+    createResolution(obj, { name }, context) {
+      console.log(name);
+      const resolutionId = Resolutions.insert({
+        name,
+      });
+      return Resolutions.findOne(resolutionId);
     },
   },
 };
